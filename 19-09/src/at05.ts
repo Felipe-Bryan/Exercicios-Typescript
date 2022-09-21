@@ -5,13 +5,12 @@
 
 let listaProdutos2: string[] = ['geladeira', 'microondas', 'fogao', 'televisao', 'ventilador', 'airfrier', 'cooktop'];
 
+console.log(listaProdutos2);
 let escolha2: string = String(prompt('Qual produto deseja comprar?')).toLowerCase();
 
 const validaProduto2: string = String(listaProdutos2.find((element): boolean => element == escolha2));
 
 let indexProduto: number = listaProdutos2.indexOf(validaProduto2);
-console.log(validaProduto2);
-console.log(indexProduto);
 
 if (indexProduto >= 0 && indexProduto <= listaProdutos2.length - 1) {
   alert('Parabéns pela sua compra');
